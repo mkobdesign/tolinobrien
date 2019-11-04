@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | Mike and Steph Are Getting Married August 1 2020`}
       meta={[
         {
           name: `description`,

@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import Scroller from "../components/scroller"
 import PortfolioModal from "../components/portfolio/modal"
 import PortfolioCarousel from "../components/portfolio/carousel"
-import TransitionLink from "gatsby-plugin-transition-link"
 
 export default class IndexPage extends React.Component {
   constructor(props) {
@@ -36,13 +35,14 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="TolinOBrien Wedding" />
-        <section className="page-section" id="about">
+        <SEO title="Registry - Steph and Mike's Wedding" />
+        <section className="page-section bg-primary" id="about">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                <h2 className="mt-0 mb-3">The Wedding</h2>
-                <p className="mb-5">
+                <h2 className="text-white mt-0">The Registry</h2>
+                <hr className="divider light my-4" />
+                <p className="text-white-50 mb-4">
                   Saturday August 1st, 2020
                   <br />
                   4:00pm
@@ -51,21 +51,25 @@ export default class IndexPage extends React.Component {
                 </p>
                 <a
                   className="btn btn-light btn-xl js-scroll-trigger mb-5"
-                  href="#accommodations"
+                  href="#services"
                   onClick={Scroller.handleAnchorScroll}
                 >
                   Rsvp
                 </a>
-                <h4 className="text-center mt-0">Ceremony & Reception</h4>
-                <p className="mb-4">
-                  Giorgio's <br />
-                  Baiting Hollow, NY
+                <h4 className="text-center text-white mt-0">
+                  Ceremony & Reception
+                </h4>
+                <p className="text-white-50 mb-4">
+                  Some information about what it will be like.
                 </p>
-                <a href="/wedding" className="mb-5">
-                  Learn more about the reception space.
-                </a>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="page-section" id="services">
+          <div className="container">
+            <iframe src="https://www.zola.com/registry/obrilino"></iframe>
           </div>
         </section>
 
@@ -129,102 +133,75 @@ export default class IndexPage extends React.Component {
                   </div>
                 </a>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="page-section" id="accommodations">
-          <div className="container">
-            <h2 className="text-center mt-0 mb-4">Accommodations & Travel</h2>
-            <div className="row">
-              <div className="col-lg-4 col-md-4 text-center">
-                <div className="mt-5">
-                  <i className="fas fa-4x fa-hotel text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Residence Inn</h3>
-                  <p className="mb-0">
-                    <a
-                      href="https://www.google.com/search?q=residence+in+east+end&oq=residence+in+east+end&aqs=chrome..69i57.2745j0j1&sourceid=chrome&ie=UTF-8"
-                      target="_blank"
-                    >
-                      Book a room
-                    </a>{" "}
-                    from our block.
-                  </p>
-                </div>
+              <div className="col-lg-4 col-sm-6">
+                <a
+                  className="portfolio-box"
+                  href="images/portfolio/fullsize/4.jpg"
+                  onClick={this.handlePortfolioClick.bind(this, 3)}
+                >
+                  <Img
+                    fluid={
+                      this.props.data.images.edges[3].node.childImageSharp.fluid
+                    }
+                  />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">
+                      Category
+                    </div>
+                    <div className="project-name">Project Name</div>
+                  </div>
+                </a>
               </div>
-              <div className="col-lg-4 col-md-4 text-center">
-                <div className="mt-5">
-                  <i className="fas fa-4x fa-hotel text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Air B&B</h3>
-                  <p className="mb-0">Feeling fancy? Book a whole house.</p>
-                </div>
+              <div className="col-lg-4 col-sm-6">
+                <a
+                  className="portfolio-box"
+                  href="img/portfolio/fullsize/5.jpg"
+                  onClick={this.handlePortfolioClick.bind(this, 4)}
+                >
+                  <Img
+                    fluid={
+                      this.props.data.images.edges[4].node.childImageSharp.fluid
+                    }
+                  />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">
+                      Category
+                    </div>
+                    <div className="project-name">Project Name</div>
+                  </div>
+                </a>
               </div>
-              <div className="col-lg-4 col-md-4 text-center">
-                <div className="mt-5">
-                  <i className="fas fa-4x fa-route text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Map Your Route</h3>
-                  <p className="mb-0">
-                    <a href="http://bit.ly/2kyborp" target="_blank">
-                      Get directions
-                    </a>{" "}
-                    to Giorgio's.
-                  </p>
-                </div>
+              <div className="col-lg-4 col-sm-6">
+                <a
+                  className="portfolio-box"
+                  href="img/portfolio/fullsize/6.jpg"
+                  onClick={this.handlePortfolioClick.bind(this, 5)}
+                >
+                  <Img
+                    fluid={
+                      this.props.data.images.edges[5].node.childImageSharp.fluid
+                    }
+                  />
+                  <div className="portfolio-box-caption p-3">
+                    <div className="project-category text-white-50">
+                      Category
+                    </div>
+                    <div className="project-name">Project Name</div>
+                  </div>
+                </a>
               </div>
-              <a className="btn btn-light btn-xl mt-5" href="/accommodations">
-                More info on hotels and travel
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="page-section bg-primary" id="things">
-          <div className="container">
-            <h2 className="text-center mt-0 mb-4">Things to Do</h2>
-            <div className="row">
-              <div className="col-lg-4 col-md-4 text-center">
-                <div className="mt-5">
-                  <i className="fas fa-4x fa-user-friends text-primary mb-4"></i>
-                  <h3 className="h4 mb-2 ">Friend Fun</h3>
-                  <p className="mb-0">
-                    Our themes are updated regularly to keep them bug free!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-4 text-center">
-                <div className="mt-5">
-                  <i className="fas fa-4x fa-wine-glass-alt text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Wine Tours</h3>
-                  <p className="mb-0">East end wineries & more.</p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-4 text-center">
-                <div className="mt-5">
-                  <i className="fas fa-4x fa-umbrella-beach text-primary mb-4"></i>
-                  <h3 className="h4 mb-2 ">Beach n Shit</h3>
-                  <p className=" mb-0">
-                    Click here to get directions on Google Maps.
-                  </p>
-                </div>
-              </div>
-              <a className="btn btn-light btn-xl mt-5" href="/things-to-do">
-                See more info on things to do.
-              </a>
             </div>
           </div>
         </section>
 
         <section className="page-section bg-dark text-white">
           <div className="container text-center">
-            <h2 className="mb-4 text-white">Registry</h2>
-            <p className="mb-5 text-white">
-              You're a sweet and generous person.
-            </p>
+            <h2 className="mb-4">Free Download at Start Bootstrap!</h2>
             <a
-              className="btn btn-cream btn-xl"
-              href="https://www.zola.com/registry/obrilino"
+              className="btn btn-light btn-xl"
+              href="https://startbootstrap.com/themes/creative/"
             >
-              See the Registry
+              Download Now!
             </a>
           </div>
         </section>
@@ -233,17 +210,24 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                <h2 className="mt-0 mb-4">
-                  Will you take this trip to be our lawfully wedded guest?
-                </h2>
-                <p className="mb-5">
-                  Click this button to let us know if you can make it.
+                <h2 className="mt-0">Let's Get In Touch!</h2>
+                <hr className="divider my-4" />
+                <p className="text-muted mb-5">
+                  Ready to start your next project with us? Give us a call or
+                  send us an email and we will get back to you as soon as
+                  possible!
                 </p>
-                <a
-                  className="btn btn-primary btn-xl"
-                  href="https://mkobdesign.com"
-                >
-                  RSVP
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                <i className="fas fa-phone fa-3x mb-3 text-muted"></i>
+                <div>+1 (202) 555-0149</div>
+              </div>
+              <div className="col-lg-4 mr-auto text-center">
+                <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                <a className="d-block" href="mailto:contact@yourwebsite.com">
+                  contact@yourwebsite.com
                 </a>
               </div>
             </div>
