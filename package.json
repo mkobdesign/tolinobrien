@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "a simple starter to get up and developing quickly with gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "kyle mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.10.1",
     "bootstrap": "^4.3.1",
@@ -36,7 +36,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "mit",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
