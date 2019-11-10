@@ -7,7 +7,9 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.10.1",
     "bootstrap": "^4.3.1",
+    "deploy:github": "npm run build && node ./scripts/deploy-github",
     "gatsby": "^2.13.51",
+    "gatsby-cli": "^2.8.8",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^2.2.4",
@@ -26,8 +28,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-scrollspy": "^3.4.0",
-    "typescript": "^3.6.3",
-    "deploy:github": "npm run build && node ./scripts/deploy-github"
+    "typescript": "^3.6.3"
   },
   "devDependencies": {
     "gatsby-plugin-transition-link": "^1.13.0",
