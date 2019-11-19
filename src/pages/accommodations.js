@@ -55,7 +55,7 @@ export default class IndexPage extends React.Component {
                     href="#services"
                     onClick={Scroller.handleAnchorScroll}
                   >
-                    Book a room at the Residence Inn
+                    Book a room at the Holiday Inn Express
                   </a>
                 </div>
               </div>
@@ -68,10 +68,10 @@ export default class IndexPage extends React.Component {
                 <div className="col-lg-5 ml-auto text-center mb-5 mb-lg-0">
                   <div className="mt-2">
                     <i className="fas fa-4x fa-hotel text-primary mb-4"></i>
-                    <h3 className="h4 mb-2">The Residence Inn</h3>
+                    <h3 className="h4 mb-2">The Holiday Inn Express</h3>
                     <p className="text-muted mb-0">
                       <a
-                        href="https://www.google.com/search?q=residence+in+east+end&oq=residence+in+east+end&aqs=chrome..69i57.2745j0j1&sourceid=chrome&ie=UTF-8"
+                        href="https://www.google.com/search?q=Holiday+Inn+East+End&oq=holiday+in&aqs=chrome.0.69i59j69i57j69i59l3j69i64.1248j0j1&sourceid=chrome&ie=UTF-8"
                         target="_blank"
                       >
                         Book a room

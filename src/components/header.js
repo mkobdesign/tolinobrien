@@ -71,34 +71,18 @@ export default class Header extends React.Component {
           </div>
         </Navbar>
         <header className="masthead">
-          <img
-            src="/Users/michaelobrien/obrilino/public/static/leaves.png"
-            class="tl-leaf"
-            alt="leaves"
-          />
           <div className="container h-100">
             <div className="row h-100 align-items-center justify-content-center text-center">
               <div className="col-lg-10 align-self-end">
-                <h1 className="text-white font-weight-lighter mb-5">
-                  MICHAEL O'BRIEN
+                <div className="leafy"></div>
+                <h1 className="font-weight-lighter">
+                  Michael O'Brien
                   <br />
                   <span className="text-primary">+</span>
-                  <br /> STEPHANIE TOLINO
+                  <br /> Stephanie Tolino
                 </h1>
-                <p className="text-white-75 font-weight-light mb-1">
-                  We're getting married, and you're invited.
-                </p>
-              </div>
-              <div className="col-lg-8 align-self-baseline">
-                <p className="text-white-75 font-weight-light mb-5"></p>
-                <p id="demo"></p>
-                <a
-                  className="btn btn-primary btn-xl js-scroll-trigger"
-                  href="#about"
-                  onClick={Scroller.handleAnchorScroll}
-                >
-                  RSVP
-                </a>
+
+                <div className="leafy flipped"></div>
               </div>
             </div>
           </div>

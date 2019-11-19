@@ -5,6 +5,38 @@ html {
   height: 100%;
 }
 
+.talllines {
+  line-height: 180%;
+}
+
+.bg-darkest {
+  background-color: #616d47 !important;
+}
+.bg-darkest a {
+  color: #fff !important;
+}
+
+.trans-text-7 {
+  opacity: 0.7;
+}
+
+.leaftop {
+  background: url("../images/leafy-full.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+}
+a.btn-white {
+  background-color: #ffffff;
+  color: #000 !important;
+}
+.col-lg-20 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+// end mkob
+
 // Typography
 .text-white-75 {
   color: fade-out($white, 0.25);
@@ -68,10 +100,13 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: #e3cabd;
-  text-transform: uppercase;
+  font-family: $font-family-serif;
+  color: #bf9883;
   letter-spacing: 4px;
   font-weight: lighter;
+}
+.text-primary {
+  color: #bf9883 !important;
 }
 p {
   color: #919191;
