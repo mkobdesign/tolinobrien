@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://mkobdesign.com">
+    <img alt="Gatsby" src="https://1hirsyfskrj4a640fzzniiqr-wpengine.netdna-ssl.com//wp-content/uploads/2017/01/mkob-design-logo-100.jpg" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -31,7 +31,7 @@ Efforts have been made to keep the implementation as close to the source templat
 1.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the starter project.
-    
+
     ```sh
     gatsby new project-name https://github.com/JohnJKerr/gatsby-creative
     ```
@@ -86,7 +86,7 @@ Make a copy of your token as you will not be able to access it again.
 Return to your repository, go to settings and add a secret with the name `ACCESS_TOKEN`.
 
 The Action will then deploy your site to `{your-github-pages-url}/{your-repository}`.
- 
+
 #### Not Using GitHub Pages?
 
 If you do not wish to use GitHub Pages, simply remove the `/.github/workflows/deploy.yml` file.
