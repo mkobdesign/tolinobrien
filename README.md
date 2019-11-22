@@ -17,4 +17,4 @@ This is a Gatsby implementation of the [Start Bootstrap's Creative](https://star
 - [GitHub Actions](https://github.com/features/actions)
 - [React Scrollspy](https://github.com/makotot/react-scrollspy)
 
-<h3>See the live site at [tolinobrien.com](https://tolinobrien.com)</h3>
+<h3>See the live site at https://tolinobrien.com</h3>
