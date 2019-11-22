@@ -16,7 +16,7 @@ header.masthead {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
-    height: 300px;
+    height: 250px;
   }
   .flipped {
     -webkit-transform: rotate(180deg);
@@ -24,6 +24,22 @@ header.masthead {
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
+  }
+  h1.fancy-names {
+    line-height: 130%;
+    margin: 30px 0px;
+    z-index: 2;
+    position: relative;
+  }
+  span.scrunch {
+    margin: -93px 0px 0px;
+    padding-bottom: 90px;
+    display: block;
+    font-size: 550%;
+    opacity: 0.3;
+    position: relative;
+    z-index: 1;
+    line-height: 0px;
   }
   @include media-breakpoint-up(lg) {
     height: 100vh;
@@ -40,6 +56,36 @@ header.masthead {
   @include media-breakpoint-up(xl) {
     h1 {
       font-size: 3.5rem;
+    }
+  }
+  @include media-breakpoint-down(med) {
+    header.masthead span.scrunch {
+      margin: -68px 0px 0px;
+      padding-bottom: 68px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .leafy {
+      height: 200px;
+    }
+    h1.fancy-names {
+      margin: 15px 0px;
+    }
+    span.scrunch {
+      margin: -48px 0px 0px;
+      padding-bottom: 48px;
+    }
+    & {
+      padding-bottom: 0px;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .leafy {
+      height: 100px;
+    }
+    h1.fancy-names {
+      margin: 12px 0px;
     }
   }
 }

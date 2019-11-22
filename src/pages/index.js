@@ -37,7 +37,7 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="TolinOBrien Wedding" />
-        <section className="page-section" id="about">
+        <section className="page-section" id="wedding">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
@@ -50,7 +50,7 @@ export default class IndexPage extends React.Component {
                 </p>
                 <p className="mb-2">
                   <a
-                    href="https://www.google.com/search?q=residence+in+east+end&oq=residence+in+east+end&aqs=chrome..69i57.2745j0j1&sourceid=chrome&ie=UTF-8"
+                    href="https://www.google.com/maps/dir//Giorgio's+Baiting+Hollow,+100+Fox+Hill+Dr,+Baiting+Hollow,+NY+11933/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x89e8605484a23319:0x6e22284be0d494a9!3e0?sa=X&ved=2ahUKEwidytiPyfvlAhXkSt8KHcWrCn0Qox0wAHoECAwQEQ"
                     target="_blank"
                   >
                     100 Fox Hill Dr <br />
@@ -67,8 +67,11 @@ export default class IndexPage extends React.Component {
 
         <section id="portfolio">
           <div className="container-fluid p-0">
-            <div className="row no-gutters">
-              <div className="col-lg-20 col-sm-6">
+            <h5 className="text-center mt-0 mb-4 text-lightly-now">
+              🎉 10 Years in the Making
+            </h5>
+            <div className="row no-gutters flex-row">
+              <div className="col-lg-20">
                 <a
                   className="portfolio-box"
                   href="img/portfolio/fullsize/1.jpg"
@@ -80,13 +83,114 @@ export default class IndexPage extends React.Component {
                     }
                   />
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
+                    <div className="project-category text-white-50">'10</div>
                   </div>
                 </a>
               </div>
+
+              <div className="col-lg-20" style={{ flexGrow: "0.5268" }}>
+                <a
+                  className="portfolio-box"
+                  href="img/portfolio/fullsize/1.jpg"
+                  onClick={this.handlePortfolioClick.bind(this, 4)}
+                >
+                  <Img
+                    fluid={
+                      this.props.data.images.edges[4].node.childImageSharp.fluid
+                    }
+                  />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">'11</div>
+                  </div>
+                </a>
+              </div>
+
+              <div className="col-lg-20" style={{ flexGrow: "1.13" }}>
+                <a
+                  className="portfolio-box"
+                  href="img/portfolio/fullsize/1.jpg"
+                  onClick={this.handlePortfolioClick.bind(this, 5)}
+                >
+                  <Img
+                    fluid={
+                      this.props.data.images.edges[5].node.childImageSharp.fluid
+                    }
+                  />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">'12</div>
+                  </div>
+                </a>
+              </div>
+
+              <div className="col-lg-20">
+                <a
+                  className="portfolio-box"
+                  href="img/portfolio/fullsize/1.jpg"
+                  onClick={this.handlePortfolioClick.bind(this, 6)}
+                >
+                  <Img
+                    fluid={
+                      this.props.data.images.edges[6].node.childImageSharp.fluid
+                    }
+                  />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">'13</div>
+                  </div>
+                </a>
+              </div>
+              <div className="col-lg-20">
+                <a
+                  className="portfolio-box"
+                  href="img/portfolio/fullsize/1.jpg"
+                  onClick={this.handlePortfolioClick.bind(this, 7)}
+                >
+                  <Img
+                    fluid={
+                      this.props.data.images.edges[7].node.childImageSharp.fluid
+                    }
+                  />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">'14</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="row no-gutters flex-row">
+              <div className="col-lg-20" style={{ flexGrow: "1.78" }}>
+                <a
+                  className="portfolio-box"
+                  href="img/portfolio/fullsize/1.jpg"
+                  onClick={this.handlePortfolioClick.bind(this, 8)}
+                >
+                  <Img
+                    fluid={
+                      this.props.data.images.edges[8].node.childImageSharp.fluid
+                    }
+                  />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">'15</div>
+                  </div>
+                </a>
+              </div>
+
+              <div className="col-lg-20">
+                <a
+                  className="portfolio-box"
+                  href="img/portfolio/fullsize/1.jpg"
+                  onClick={this.handlePortfolioClick.bind(this, 9)}
+                >
+                  <Img
+                    fluid={
+                      this.props.data.images.edges[9].node.childImageSharp.fluid
+                    }
+                  />
+                  <div className="portfolio-box-caption">
+                    <div className="project-category text-white-50">'16</div>
+                  </div>
+                </a>
+              </div>
+
               <div className="col-lg-20">
                 <a
                   className="portfolio-box"
@@ -99,13 +203,11 @@ export default class IndexPage extends React.Component {
                     }
                   />
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
+                    <div className="project-category text-white-50">'17</div>
                   </div>
                 </a>
               </div>
+
               <div className="col-lg-20">
                 <a
                   className="portfolio-box"
@@ -118,67 +220,7 @@ export default class IndexPage extends React.Component {
                     }
                   />
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-20">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 0)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[3].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-20">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 0)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[4].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-20">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 0)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[5].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
+                    <div className="project-category text-white-50">'18</div>
                   </div>
                 </a>
               </div>
@@ -187,75 +229,15 @@ export default class IndexPage extends React.Component {
                 <a
                   className="portfolio-box"
                   href="img/portfolio/fullsize/1.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 0)}
+                  onClick={this.handlePortfolioClick.bind(this, 3)}
                 >
                   <Img
                     fluid={
-                      this.props.data.images.edges[6].node.childImageSharp.fluid
+                      this.props.data.images.edges[3].node.childImageSharp.fluid
                     }
                   />
                   <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-20">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 0)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[7].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-20">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 0)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[8].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-20">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 0)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[9].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">Project Name</div>
+                    <div className="project-category text-white-50">'19</div>
                   </div>
                 </a>
               </div>
@@ -288,7 +270,10 @@ export default class IndexPage extends React.Component {
                   <i className="fas fa-4x fa-route text-white mb-4"></i>
                   <h3 className="h4 mb-2 text-white">Map Your Route</h3>
                   <p className="mb-0 text-white-50">
-                    <a href="http://bit.ly/2kyborp" target="_blank">
+                    <a
+                      href="https://www.google.com/maps/dir//Giorgio's+Baiting+Hollow,+100+Fox+Hill+Dr,+Baiting+Hollow,+NY+11933/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x89e8605484a23319:0x6e22284be0d494a9!3e0?sa=X&ved=2ahUKEwidytiPyfvlAhXkSt8KHcWrCn0Qox0wAHoECAwQEQ"
+                      target="_blank"
+                    >
                       Get directions
                     </a>{" "}
                     to Giorgio's.
@@ -310,8 +295,8 @@ export default class IndexPage extends React.Component {
               </h5>
               <p align="center" className="text-white-50">
                 August is peak season on the east end and rooms are being held
-                on a first-come first-served so please book asap to guarantee
-                your stay.
+                on a first-come first-served basis so please book asap to
+                guarantee your stay.
               </p>
             </div>
           </div>
@@ -383,7 +368,7 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-
+        {/*         
         <section className="page-section bg-darkest text-white">
           <div className="container text-center">
             <h2 className="mb-4 text-white">Registry</h2>
@@ -397,7 +382,7 @@ export default class IndexPage extends React.Component {
               See the Registry
             </a>
           </div>
-        </section>
+        </section> */}
 
         <PortfolioModal
           show={this.state.modalShow}

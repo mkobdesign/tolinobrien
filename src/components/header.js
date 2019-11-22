@@ -20,34 +20,47 @@ export default class Header extends React.Component {
         >
           <div className="container">
             <a className="navbar-brand js-scroll-trigger" href="/">
-              WE ARE OBRILINO
+              #TolinOBrien
             </a>
             <Navbar.Toggle aria-controls="navbarResponsive" />
             <Navbar.Collapse id="navbarResponsive">
               <Nav className="navbar-nav ml-auto my-2 my-lg-0">
                 <Scrollspy
                   className="navbar-nav"
-                  items={["about", "services", "portfolio", "contact"]}
+                  items={["wedding", "accommodations", "things"]}
                   currentClassName="active"
                   rootEl={"#mainNav"}
                   offset={-75}
                 >
                   <li className="nav-item">
-                    <a className="nav-link" href="/wedding">
+                    <Nav.Link
+                      className={"js-scroll-trigger"}
+                      href="#wedding"
+                      onClick={Scroller.handleAnchorScroll}
+                    >
                       The Wedding
-                    </a>
+                    </Nav.Link>
                   </li>
                   <li className="nav-item">
-                    <a href="/accommodations" className="nav-link">
+                    <Nav.Link
+                      className={"js-scroll-trigger"}
+                      href="#accommodations"
+                      onClick={Scroller.handleAnchorScroll}
+                    >
                       Accommodations & Travel
-                    </a>
+                    </Nav.Link>
                   </li>
+
                   <li className="nav-item">
-                    <a className="nav-link" href="things-to-do">
-                      Things to Do
-                    </a>
+                    <Nav.Link
+                      className={"js-scroll-trigger"}
+                      href="#things"
+                      onClick={Scroller.handleAnchorScroll}
+                    >
+                      Things To Do
+                    </Nav.Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a
                       href="https://www.zola.com/registry/tolinobrien"
                       target="_blank"
@@ -55,33 +68,23 @@ export default class Header extends React.Component {
                     >
                       Registry
                     </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className={"js-scroll-trigger"}
-                      href="https://www.zola.com/wedding/tolinobrien/rsvp"
-                      className="nav-link"
-                    >
-                      RSVP
-                    </a>
-                  </li>
+                  </li> */}
                 </Scrollspy>
               </Nav>
             </Navbar.Collapse>
           </div>
         </Navbar>
         <header className="masthead">
-          <div className="container h-100">
-            <div className="row h-100 align-items-center justify-content-center text-center">
+          <div className="container">
+            <div className="row align-items-center justify-content-center text-center">
               <div className="col-lg-10 align-self-end">
                 <div className="leafy"></div>
-                <h1 className="font-weight-lighter">
+                <h1 className="font-weight-lighter fancy-names">
                   Michael O'Brien
                   <br />
-                  <span className="text-primary">+</span>
-                  <br /> Stephanie Tolino
+                  Stephanie Tolino
                 </h1>
-
+                <span class="text-primary scrunch">&</span>
                 <div className="leafy flipped"></div>
               </div>
             </div>
