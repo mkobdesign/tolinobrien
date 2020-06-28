@@ -18,6 +18,14 @@ header.masthead {
     background-size: contain;
     height: 250px;
   }
+  .leafyfall {
+    background: url("../images/leaves-fall.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    height: 280px;
+  }
   .flipped {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -42,7 +50,7 @@ header.masthead {
     line-height: 0px;
   }
   @include media-breakpoint-up(lg) {
-    height: 100vh;
+    // height: 100vh;
     min-height: 40rem;
     padding-top: $navbar-height;
     padding-bottom: 0;
@@ -69,6 +77,9 @@ header.masthead {
     .leafy {
       height: 200px;
     }
+    .leafyfall {
+      height: 180px;
+    }
     h1.fancy-names {
       margin: 15px 0px;
     }
@@ -83,6 +94,9 @@ header.masthead {
   @include media-breakpoint-down(xs) {
     .leafy {
       height: 100px;
+    }
+    .leafyfall {
+      height: 130px;
     }
     h1.fancy-names {
       margin: 12px 0px;

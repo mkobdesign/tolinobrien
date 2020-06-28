@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import Scroller from "../components/scroller"
 import PortfolioModal from "../components/portfolio/modal"
 import PortfolioCarousel from "../components/portfolio/carousel"
-import TransitionLink from "gatsby-plugin-transition-link"
 
 export default class IndexPage extends React.Component {
   constructor(props) {
@@ -41,7 +40,7 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                <h2 className="mt-0 mb-3">Saturday August 1st, 2020</h2>
+                <h2 className="mt-0 mb-3">Saturday October 23rd, 2021</h2>
 
                 <h4 className="text-center mt-0 mb-4">Ceremony & Reception</h4>
                 <p className="mb-4">
@@ -52,6 +51,7 @@ export default class IndexPage extends React.Component {
                   <a
                     href="https://www.google.com/maps/dir//Giorgio's+Baiting+Hollow,+100+Fox+Hill+Dr,+Baiting+Hollow,+NY+11933/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x89e8605484a23319:0x6e22284be0d494a9!3e0?sa=X&ved=2ahUKEwidytiPyfvlAhXkSt8KHcWrCn0Qox0wAHoECAwQEQ"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     100 Fox Hill Dr <br />
                     Baiting Hollow, NY 11933
@@ -68,8 +68,15 @@ export default class IndexPage extends React.Component {
         <section id="portfolio">
           <div className="container-fluid p-0">
             <h5 className="text-center mt-0 mb-4 text-lightly-now">
-              🎉 10 Years in the Making
+              <span role="img" aria-label="celebration">
+                🎉
+              </span>{" "}
+              10 Years in the Making{" "}
+              <span role="img" aria-label="heart">
+                ❤️
+              </span>
             </h5>
+
             <div className="row no-gutters flex-row">
               <div className="col-lg-20">
                 <a
@@ -91,7 +98,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-20" style={{ flexGrow: "0.5268" }}>
                 <a
                   className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
+                  href="img/portfolio/fullsize/2.jpg"
                   onClick={this.handlePortfolioClick.bind(this, 4)}
                 >
                   <Img
@@ -108,7 +115,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-20" style={{ flexGrow: "1.13" }}>
                 <a
                   className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
+                  href="img/portfolio/fullsize/3.jpg"
                   onClick={this.handlePortfolioClick.bind(this, 5)}
                 >
                   <Img
@@ -125,7 +132,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-20">
                 <a
                   className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
+                  href="img/portfolio/fullsize/4.jpg"
                   onClick={this.handlePortfolioClick.bind(this, 6)}
                 >
                   <Img
@@ -141,7 +148,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-20">
                 <a
                   className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
+                  href="img/portfolio/fullsize/6.jpg"
                   onClick={this.handlePortfolioClick.bind(this, 7)}
                 >
                   <Img
@@ -160,7 +167,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-20" style={{ flexGrow: "1.78" }}>
                 <a
                   className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
+                  href="img/portfolio/fullsize/7.jpg"
                   onClick={this.handlePortfolioClick.bind(this, 8)}
                 >
                   <Img
@@ -177,7 +184,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-20">
                 <a
                   className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
+                  href="img/portfolio/fullsize/9.jpg"
                   onClick={this.handlePortfolioClick.bind(this, 9)}
                 >
                   <Img
@@ -194,7 +201,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-20">
                 <a
                   className="portfolio-box"
-                  href="img/portfolio/fullsize/2.jpg"
+                  href="img/portfolio/fullsize/10.jpg"
                   onClick={this.handlePortfolioClick.bind(this, 1)}
                 >
                   <Img
@@ -211,7 +218,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-20">
                 <a
                   className="portfolio-box"
-                  href="img/portfolio/fullsize/3.jpg"
+                  href="img/portfolio/fullsize/11.jpg"
                   onClick={this.handlePortfolioClick.bind(this, 2)}
                 >
                   <Img
@@ -228,7 +235,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-20">
                 <a
                   className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
+                  href="img/portfolio/fullsize/13.jpg"
                   onClick={this.handlePortfolioClick.bind(this, 3)}
                 >
                   <Img
@@ -253,14 +260,16 @@ export default class IndexPage extends React.Component {
             <h2 className="text-center mt-0 mb-4 text-white">
               Accommodations & Travel
             </h2>
+
             <div className="row">
               <div className="col-lg-6 col-md-6 text-center mb-4">
                 <div className="mt-5">
                   <i className="fas fa-4x fa-hotel text-white mb-4"></i>
                   <h3 className="h4 mb-2 text-white">Holiday Inn Express</h3>
-                  <p className="mb-0 text-white-50">
+                  <p className="mb-20 text-white-50">
                     Call <a href="tel:16315481000">631 548 1000</a> to book a
                     room from the Tolino-O'Brien block.
+                    <br />
                   </p>
                 </div>
               </div>
@@ -269,10 +278,11 @@ export default class IndexPage extends React.Component {
                 <div className="mt-5">
                   <i className="fas fa-4x fa-route text-white mb-4"></i>
                   <h3 className="h4 mb-2 text-white">Map Your Route</h3>
-                  <p className="mb-0 text-white-50">
+                  <p className="mb-20 text-white-50">
                     <a
                       href="https://www.google.com/maps/dir//Giorgio's+Baiting+Hollow,+100+Fox+Hill+Dr,+Baiting+Hollow,+NY+11933/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x89e8605484a23319:0x6e22284be0d494a9!3e0?sa=X&ved=2ahUKEwidytiPyfvlAhXkSt8KHcWrCn0Qox0wAHoECAwQEQ"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Get directions
                     </a>{" "}
@@ -281,6 +291,7 @@ export default class IndexPage extends React.Component {
                     <a
                       href="https://www.google.com/maps/dir//Holiday+Inn+East+End/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89e88aac2d7fbbd1:0xd6c8c3beeee76009?sa=X&ved=2ahUKEwjqxZ6xwu3lAhUHTt8KHVROD2YQ9RcwDHoECAsQEA"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Get directions
                     </a>{" "}
@@ -289,14 +300,22 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
             </div>
-            <div style={{ maxWidth: "520px", margin: "40px auto" }}>
+            <p
+              className="text-white"
+              align="center"
+              style={{ marginBottom: "60px" }}
+            >
+              If you already booked a room for the original date, you still have
+              a room reserved for the new date (with a $50 price reduction).
+            </p>
+            <div style={{ maxWidth: "520px", margin: "30px auto" }}>
               <h5 align="center" className="mb-3 text-white">
                 Shuttle service to and from the venue will be provided.
               </h5>
               <p align="center" className="text-white-50">
-                August is peak season on the east end and rooms are being held
-                on a first-come first-served basis so please book asap to
-                guarantee your stay.
+                Fall is busy season on the east end and rooms are being held on
+                a first-come first-served basis so please book asap to guarantee
+                your stay.
               </p>
             </div>
           </div>
@@ -314,23 +333,33 @@ export default class IndexPage extends React.Component {
                     <a
                       href="https://www.paumanok.com/visit_us.html"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Paumanok Vineyards
                     </a>
 
                     <br />
-                    <a href="https://www.lispirits.com/" target="_blank">
+                    <a
+                      href="https://www.lispirits.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Long Island Spirits Distillery
                     </a>
                     <br />
                     <a
                       href="https://www.northforkbrewingco.com/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       North Fork Brewing Company
                     </a>
                     <br />
-                    <a href="http://www.riverheadcider.com/" target="_blank">
+                    <a
+                      href="http://www.riverheadcider.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Riverhead Cider House
                     </a>
                   </p>
@@ -344,22 +373,32 @@ export default class IndexPage extends React.Component {
                     <a
                       href="https://www.google.com/maps/dir//iron+pier/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89e88c01b391755d:0xad4b07a892cd6dd7?sa=X&ved=2ahUKEwjE2oezue_lAhXswVkKHTOhCkwQ9RcwFHoECAoQEA"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Iron Pier Beach
                     </a>
                     <br />
-                    <a href="http://www.prherbfarm.com/" target="_blank">
+                    <a
+                      href="http://www.prherbfarm.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Peconic River Herb Farm
                     </a>
                     <br />
                     <a
                       href="https://www.opentable.com/cooperage-inn-restaurant"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Cooperage Inn Restaurant
                     </a>
                     <br />
-                    <a href="https://barrowfoodhouse.com/" target="_blank">
+                    <a
+                      href="https://barrowfoodhouse.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Barrow Food House
                     </a>
                   </p>
