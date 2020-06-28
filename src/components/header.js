@@ -86,6 +86,7 @@ export default class Header extends React.Component {
                 </h1>
                 <span class="text-primary scrunch">&</span>
                 <div className="leafy flipped"></div>
+                <div className="leafyfall"></div>
               </div>
             </div>
           </div>
