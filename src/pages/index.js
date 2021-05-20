@@ -71,7 +71,7 @@ export default class IndexPage extends React.Component {
               <span role="img" aria-label="celebration">
                 🎉
               </span>{" "}
-              10 Years in the Making{" "}
+              12 Years in the Making{" "}
               <span role="img" aria-label="heart">
                 ❤️
               </span>
